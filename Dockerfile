@@ -1,6 +1,6 @@
-FROM maven:3-eclipse-temurin-17
+FROM maven:3-eclipse-temurin-21
 
-MAINTAINER Dominik Fuchss <dominik.fuchss@kit.edu>
+MAINTAINER Jakob Jarebica <jakob.jarebica@student.kit.edu>
 
 RUN apt-get update && apt-get install -y gnupg && rm -rf /var/lib/apt/lists/*
  
@@ -16,6 +16,6 @@ RUN echo "$LANG -- $LANGUAGE -- $LC_ALL" \
     
 
 ADD . /opt/java-template
-RUN cd /opt/java-template && pwd && ls -la && mvn clean install test && mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd && cd / && rm -rf /opt/java-template
+RUN cd /opt/java-template && pwd && ls -la && mvn clean install && cd / && rm -rf /opt/java-template
 
 CMD ["mvn"]
