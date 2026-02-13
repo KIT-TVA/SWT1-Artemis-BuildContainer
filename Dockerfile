@@ -1,6 +1,6 @@
-FROM maven:3-eclipse-temurin-21
+FROM maven:3-eclipse-temurin-25-alpine
 
-MAINTAINER Jakob Jarebica <jakob.jarebica@student.kit.edu>
+LABEL org.opencontainers.image.authors="Jakob Jarebica <jakob.jarebica@kit.edu>"
 
 COPY pom.xml /tmp/pom.xml
 COPY pom2.xml /tmp/pom2.xml

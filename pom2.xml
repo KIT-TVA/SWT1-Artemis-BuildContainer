@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.kit.informatik.artemis</groupId>
 	<artifactId>build-sample</artifactId>
-	<version>0.2.1</version>
+	<version>0.2.3</version>
 	<name>Build Example</name>
 	<description>Just another Build Example to cache all build dependencies.</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven-surefire-plugin-version>3.2.2</maven-surefire-plugin-version>
+		<maven-surefire-plugin-version>3.5.4</maven-surefire-plugin-version>
 	</properties>
 	<repositories>
 		<repository>
